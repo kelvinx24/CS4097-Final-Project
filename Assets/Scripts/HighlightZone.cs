@@ -9,10 +9,12 @@ public class HighlightZone : MonoBehaviour
 
     public void HighlightMe()
     {
-        if (PlayerManager.IsItemHeld())
-        {
-            gameObject.GetComponent<Renderer>().enabled = true;
-        }
+        gameObject.GetComponent<Renderer>().enabled = true;
+    }
+
+    public void DehighlightMe()
+    {
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     public void DehighlightAll()
