@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// An area that objects will snap into place into when placed
 public class HighlightZone : MonoBehaviour
 {
 

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// manages the item being heled by the player as well as the state
+// of the players controllers
 public class PlayerManager : MonoBehaviour
 {
 

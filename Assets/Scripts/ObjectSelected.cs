@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
+// script for enabling snappy placement for a grabbable object
 public class ObjectSelected : MonoBehaviour
 {
     private XRGrabInteractable grabInteractable;
@@ -25,6 +26,6 @@ public class ObjectSelected : MonoBehaviour
     private void OnDrop(SelectExitEventArgs args)
     {
         PlayerManager.SetItemHeld(false);
-
+        
     }
 }
