@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/XR Interaction Toolkit/3.0.5/Starter Assets/DemoScene.unity
-    guid: 319dafa5c80f29f428dc1e0d03f04177
+    path: Assets/Scenes/_XRInteractionScene.unity
+    guid: f621873df421d9144a6adc39f3ae21bb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b5713d1c6a181ca458b62c8c790370fe, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 8de80ad7761583c459d86d3810efdb4d, type: 2}
