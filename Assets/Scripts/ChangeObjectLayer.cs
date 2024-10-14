@@ -8,6 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class ChangeObjectLayer : MonoBehaviour
 {
     public string newInteractionLayer = "Snapped";
+    public bool isSnapped = false;
 
     private XRSocketInteractor socketInteractor;
     private int originalLayer;
@@ -27,7 +28,9 @@ public class ChangeObjectLayer : MonoBehaviour
         if (grabbedObject != null)
         {
             originalLayer = grabbedObject.interactionLayers;
+            socketInteractor.interactionLayers = InteractionLayerMask.GetMask(newInteractionLayer);
             grabbedObject.interactionLayers = InteractionLayerMask.GetMask(newInteractionLayer);
+            isSnapped = true;
         }
 
     }
@@ -36,6 +39,8 @@ public class ChangeObjectLayer : MonoBehaviour
     {
         XRGrabInteractable grabbedObject = args.interactableObject as XRGrabInteractable;
 
+        socketInteractor.interactionLayers = originalLayer;
         grabbedObject.interactionLayers = originalLayer;
+        isSnapped = false;
     }
 }
